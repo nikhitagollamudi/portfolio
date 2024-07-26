@@ -1,0 +1,79 @@
+.about {
+  margin: 50px 0;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  width: 98%;
+}
+
+.about-me:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffebcd;
+  transition: box-shadow, background-color 0.3s;
+}
+
+.about-img img {
+  width: 55%;
+  height: auto;
+  margin-left: 150px;
+  margin-top: 20px;
+  border-radius: 0;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+}
+
+.about-me {
+  padding: 20px;
+  align-items: center;
+  margin: 20px auto;
+  margin-left: -25px;
+}
+
+.about-me h2 {
+  margin-bottom: 20px;
+  color: teal;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about-me p {
+  margin-right: 30px;
+  text-align: justify;
+  color: darkslategray;
+  font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about {
+    margin-left: 50;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .about-img img {
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .about-me {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .about-me p {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  .container {
+    margin-left: 50px;
+  }
+}
+
+/* Dark Mode */
+#dark .about {
+  background-color: lightgrey;
+}

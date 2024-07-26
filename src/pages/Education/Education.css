@@ -1,0 +1,140 @@
+.container.education {
+  background: #f9f9f9;
+  margin-left: 50px;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.education .section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: teal;
+}
+
+.education h2::before {
+  content: "📚";
+  margin-right: 10px;
+}
+
+.education h3 {
+  font-size: 1.3em;
+}
+
+.education h4 {
+  color: teal;
+  font-size: 1.2em;
+}
+
+.education hr {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #3c3939;
+}
+
+.education .tagline {
+  text-align: center;
+  
+  color: darkgoldenrod;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.education-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 15px;
+  padding: 20px;
+  margin-left: 30px;
+  background-color: #fff;
+}
+
+.education-row:hover {
+  background-color: #ffebcd;
+  transform: translateY(-5px);
+}
+
+.image-left .education-image-column {
+  order: 1;
+}
+
+.image-left .education-content-column {
+  order: 2;
+}
+
+.image-right .education-image-column {
+  order: 2;
+}
+
+.image-right .education-content-column {
+  order: 1;
+}
+
+.education-image-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.education-content-column {
+  flex: 2;
+  padding-left: 20px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.education-image {
+  width: 170px;
+}
+
+.course-icon {
+  margin-left: 17px;
+}
+
+.course-tag::before {
+  content: '📙';
+  margin-left: 17px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .education-row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .education-image-column, .education-content-column {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .education-image {
+      width: 80%;
+      margin: auto;
+  }
+
+  .education-content-column {
+      padding: 0;
+  }
+}
+
+#dark .education{
+  background-color: lightgray;
+}
+
+#dark .education-content-column{
+  color:black;
+}
+
+#dark .education hr{
+  color:black
+}

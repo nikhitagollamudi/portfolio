@@ -1,0 +1,139 @@
+.container.experience {
+  background: #f9f9f9;
+  margin-left: 50px;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.experience h2 {
+  color: teal;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.experience h2::before {
+  content: "💼";
+  margin-right: 10px;
+}
+
+.experience hr {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #3c3939;
+}
+
+.experience .tagline {
+  text-align: center;
+  
+  color: darkgoldenrod;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.experience-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+}
+
+.experience-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffebcd;
+}
+
+.experience-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.experience-content {
+  flex: 1;
+}
+
+.experience-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.experience-content h4 a {
+  color: teal;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.experience-content h4 a:hover {
+  color: darkslategray;
+}
+
+.experience-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.experience-content ul li {
+  color: darkslategray;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s, transform 0.3s;
+  padding-left: 25px;
+}
+
+.experience-content ul li::before {
+  content: "🔶";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: coral;
+  font-size: 1.2em;
+}
+
+.experience-content ul li:hover {
+  transform: translateX(10px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experience-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .experience-image {
+      width: 60px;
+      height: 60px;
+  }
+}
+
+
+#dark .experience{
+  background-color: lightgray;
+}

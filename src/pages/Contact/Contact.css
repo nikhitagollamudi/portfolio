@@ -1,0 +1,112 @@
+.container.contact {
+  background: #f9f9f9;
+  margin-left: 50px;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact .section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: teal;
+}
+
+.contact h2::before {
+  content: "📞";
+  margin-right: 10px;
+}
+
+.contact hr {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #3c3939;
+}
+
+.contact .tagline {
+  text-align: center;
+  
+  color: darkgoldenrod;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffebcd;
+}
+
+.contact-icon {
+  font-size: 2em;
+  color: coral;
+  margin-bottom: 10px;
+}
+
+.contact-item h4 {
+  margin-top: 0;
+  color: teal;
+  font-size: 1.5em;
+}
+
+.contact-item p {
+  color: darkslategray;
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.contact-item a {
+  color: teal;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: darkslategray;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-item {
+      width: 80%;
+  }
+
+  .contact-item h4 {
+      font-size: 1.2em;
+  }
+
+  .contact-item p {
+      font-size: 1em;
+  }
+
+  .contact-icon {
+      font-size: 1.5em;
+  }
+}
+
+#dark .contact{
+  background-color: lightgrey;
+  
+}

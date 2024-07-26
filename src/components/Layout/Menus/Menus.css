@@ -1,0 +1,53 @@
+.navbar-profile-pic img {
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-item {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .nav-link {
+    margin-top: 40px;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .nav-link svg {
+    margin-right: 10px;
+    font-size: 20px;
+    width: 30px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar-profile-pic img {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .nav-item {
+      margin-top: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  
+    .nav-link {
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+  
+    .nav-link svg {
+      font-size: 16px;
+      width: 24px;
+    }
+  }
